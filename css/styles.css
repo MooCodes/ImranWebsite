@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfefc;
+  font-family: "Jost", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  z-index: 100;
+
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease 0.8s;
+  transition: opacity 0.8s ease 0.8s;
+}
+
+.showNav {
+  opacity: 1;
+}
+
+.logo {
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-img {
+  width: 100%;
+  max-width: 100%;
+  height: 750px;
+  filter: brightness(0.4) contrast(0.9);
+  object-fit: cover;
+  z-index: 99;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.header-span {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  font-size: 80px;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  line-height: 1.2;
+
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.navbar-toggle {
+  display: none;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 32px;
+}
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1;
+  list-style: none;
+}
+
+.navbar-dropdown li {
+  margin-bottom: 5px;
+}
+
+.navbar-dropdown a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar-dropdown a:hover {
+  background-color: #f8f8f8;
+}
+
+.showSpan {
+  opacity: 1;
+}
+
+.showDropdown {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
