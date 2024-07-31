@@ -17,7 +17,6 @@ navbarToggle.addEventListener("click", function () {
 
 // check if user clicks outside of the navbar
 window.onclick = function (event) {
-  console.log(event.target);
   if (!event.target.matches(".navbar-toggle-icon")) {
     navbarDropdown.classList.remove("showDropdown");
   }
