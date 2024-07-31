@@ -21,8 +21,8 @@ body {
   z-index: 100;
 
   opacity: 0;
-  -webkit-transition: opacity 0.8s ease 0.8s;
-  transition: opacity 0.8s ease 0.8s;
+  -webkit-transition: opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .showNav {
@@ -63,26 +63,25 @@ body {
   filter: brightness(0.4) contrast(0.9);
   object-fit: cover;
   z-index: 99;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+  user-select: none; 
+  pointer-events: none;
 }
 
 .header-span {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   color: #fff;
   font-size: 80px;
-  top: 45%;
+  top: 300px;
   left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  transform: translate(-50%, -50%);
   font-weight: 300;
   line-height: 1.2;
 
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease 0.4s;
-  transition: opacity 0.4s ease 0.4s;
+  -webkit-transition: opacity 0.8s ease 0.8s;
+  transition: opacity 0.8s ease 0.8s;
 }
 
 .navbar-toggle {
@@ -106,6 +105,7 @@ body {
   padding: 10px;
   z-index: 1;
   list-style: none;
+  width: 200px;
 }
 
 .navbar-dropdown li {
@@ -116,6 +116,7 @@ body {
   display: block;
   color: #333;
   text-decoration: none;
+  text-align: center;
   padding: 5px 10px;
   border-radius: 4px;
 }
