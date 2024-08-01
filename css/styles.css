@@ -191,7 +191,7 @@ body {
 .img-content {
   width: 100%;
   max-width: 100%;
-  height: 300px;
+  height: 400px;
   filter: brightness(0.4) contrast(0.9);
   object-fit: cover;
   z-index: 99;
@@ -216,21 +216,67 @@ body {
 
 .imran-desc-container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   width: 60%;
   margin: 60px auto;
+}
+
+.imran-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .imran-desc h3 {
   font-size: 24px;
   font-weight: 300;
-  margin-bottom: 10px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .imran-desc p {
   font-size: 18px;
-  font-weight: 250;
+  font-weight: 300;
+}
+
+.bookkeeping-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 60%;
+  margin: 60px auto;
+}
+
+.bookkeeping-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.bookkeeping-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bookkeeping-row h3 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  min-width: 200px;
+}
+
+.bookkeeping-row p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+hr {
+  color: #D7D8D6;
 }
 
 /* Media Queries */
@@ -278,6 +324,7 @@ body {
 
   .imran-desc-container {
     flex-direction: column;
+    width: 90%;
   }
 
   .imran-img {
@@ -287,10 +334,27 @@ body {
   .imran-desc h3 {
     text-align: center;
   }
+
+  .bookkeeping-container {
+    width: 90%;
+  }
+
+  .bookkeeping-row {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .content-container {
+    width: 90%;
+  }
+
+  .imran-desc-container {
+    width: 90%;
+  }
+
+  .bookkeeping-container {
     width: 90%;
   }
 }
