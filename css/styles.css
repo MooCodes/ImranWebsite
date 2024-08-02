@@ -9,7 +9,6 @@ body {
   background-color: #fbfefc;
   font-family: "Jost", sans-serif;
   /* uncomment below if you dont want extra space at the bottom */
-  /* height: 100%; */
 }
 
 .navbar {
@@ -99,7 +98,7 @@ body {
   position: absolute;
   color: #fff;
   font-size: 80px;
-  top: 45%;
+  top: 50%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -162,7 +161,6 @@ body {
 }
 
 .content-container {
-  margin-top: 60px;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -170,7 +168,7 @@ body {
   align-items: center;
   width: 60%;
   max-width: 1000px;
-  margin: 60px auto;
+  margin: 80px auto;
 }
 
 .content-container h1 {
@@ -218,13 +216,17 @@ body {
   display: flex;
   gap: 20px;
   width: 60%;
-  margin: 60px auto;
+  margin: 80px auto;
 }
 
 .imran-desc {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.imran-img img {
+  border-radius: 4px;
 }
 
 .imran-desc h3 {
@@ -239,44 +241,185 @@ body {
   font-weight: 300;
 }
 
-.bookkeeping-container {
+.services-container {
   display: flex;
   flex-direction: column;
   gap: 60px;
   margin-top: 60px;
   margin-bottom: 60px;
   width: 60%;
-  margin: 60px auto;
+  margin: 80px auto;
 }
 
-.bookkeeping-row {
+.services-row {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
 
-.bookkeeping-desc {
+.services-desc {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.bookkeeping-row h3 {
+.services-row h3 {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   letter-spacing: 3px;
   min-width: 200px;
+  max-width: 200px;
 }
 
-.bookkeeping-row p {
+.services-row p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+hr {
+  color: #d7d8d6;
+  height: 1px;
+  background-color: dimgray;
+}
+
+.cfo-stuff {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.cfo-stuff h3 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 250;
+  letter-spacing: 2px;
+
+  margin-bottom: 60px;
+}
+
+.services-desc ul {
+  margin-left: 40px;
+}
+
+.services-desc ul li {
   font-size: 18px;
   font-weight: 300;
 }
 
-hr {
-  color: #D7D8D6;
+footer {
+  background-color: #201a16;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 33%;
+  margin: 80px auto;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-header h2 {
+  font-size: 28px;
+}
+
+.contact-header p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form h3 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name-container {
+  display: flex;
+  gap: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form input {
+  padding: 10px;
+}
+
+.name label {
+  font-size: 12px;
+}
+
+.required {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  resize: none;
+}
+
+form button {
+  width: 25%;
+  padding: 15px;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  color: #ffffff;
+  background-color: #333333;
 }
 
 /* Media Queries */
@@ -335,13 +478,29 @@ hr {
     text-align: center;
   }
 
-  .bookkeeping-container {
+  .services-container {
     width: 90%;
   }
 
-  .bookkeeping-row {
+  .services-row {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .cfo-stuff {
+    width: 90%;
+  }
+
+  .cfo-stuff h3 {
+    font-size: 24px;
+  }
+
+  .contact-container {
+    width: 90%;
+  }
+
+  form button {
+    width: 100%;
   }
 }
 
@@ -354,7 +513,19 @@ hr {
     width: 90%;
   }
 
-  .bookkeeping-container {
+  .services-container {
     width: 90%;
+  }
+
+  .cfo-stuff {
+    width: 90%;
+  }
+
+  .contact-container {
+    width: 66%;
+  }
+
+  form button {
+    width: 100%;
   }
 }
